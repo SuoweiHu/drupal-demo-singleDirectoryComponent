@@ -1,0 +1,7 @@
+name: Olivero Custom
+type: theme
+description: 'Custom olivero theme to practice SDC'
+core_version_requirement: ^9.5 || ^10
+base theme: olivero
+libraries:
+  - olivero_custom/global-styling

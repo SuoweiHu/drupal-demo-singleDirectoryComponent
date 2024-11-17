@@ -1,0 +1,18 @@
+<?php
+
+function olivero_custom_preprocess_paragraph(array &$variables) {
+
+    // Getting varaible type
+    $paragraph      = $variables["paragraph"];
+    $paragraph_type = $variables["paragraph"] -> getType();
+    $field_title    = $paragraph->get('field_title')->value; //dump($field_title);
+
+    // Use single directory component if parargraph type name is matched
+    if($paragraph_type == "paragraph_cardtile"){
+        $variables['content']=[
+            '#type'      => 'component',
+            '#component' => 'olivero_custom:card-tile',
+            '#props'     => ['title'=> "Mr. ".$field_title]
+        ];
+    }
+}

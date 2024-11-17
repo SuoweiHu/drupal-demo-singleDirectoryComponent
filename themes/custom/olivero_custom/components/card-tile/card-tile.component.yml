@@ -1,0 +1,10 @@
+name: Card-Tile
+description: A basic card tile component
+props:
+  type: object
+  additionalProperties: false
+  properties:
+    title:
+      type: object
+      title: Card Title
+      required: true

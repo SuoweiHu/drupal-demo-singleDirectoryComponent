@@ -1,0 +1,7 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      global/css/global.css: {}
+  js:
+    global/js/global.js: {}
